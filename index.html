@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InventVictory - Smart Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://i.pinimg.com/564x/b2/e6/92/b2e6927ed540da897e8cd5465aac6a30.jpg" alt="InventVictory Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Smart Inventory Management</h1>
+            <p>Optimize your stock levels, reduce errors, and enhance efficiency with InventVictory.</p>
+            <a href="DMBS-SQL" class="cta-button">Update Your Stock Now!</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.ibb.co/qLvGKStz/Make-Inventory-Control-Your-competitive-advantage-blog-image.jpg" alt="Warehouse Management">
+        </div>
+    </section>
+    
+    <script>
+        // Mobile Navbar Toggle
+        document.querySelector('.logo').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Why Inventory Management Section -->
+    <section class="why-inventory">
+        <div class="container">
+            <div class="content">
+                <h2>Why is Inventory Management Important?</h2>
+                <p>Effective inventory management helps businesses optimize stock levels, reduce waste, and enhance efficiency. 
+                   It ensures products are available when needed, improving customer satisfaction and profitability.</p>
+                <a href="https://www.youtube.com/watch?v=gQyE0XMK3Lw" class="cta-button">Start Now</a>
+            </div>
+            <div class="image-container">
+                <img src="https://i.ibb.co/j9vWFjbp/6501983.webp" alt="Inventory Management Illustration">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Benefits from Smart Inventory Management?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="customers">
+        <div class="container">
+            <div class="text-content">
+                <h2>Who Benefits from Smart Inventory Management?</h2>
+                <h3>Retail</h3>
+                <p>Efficient inventory management is crucial for retail businesses to prevent stockouts, reduce overstock, and enhance sales performance. InventVictory provides real-time tracking and analytics to help retailers make data-driven decisions for optimized inventory control.</p>
+                <a href="#" class="cta-button">Experience Retail Management →</a>
+            </div>
+            <div class="image-content">
+                <img src="https://i.ibb.co/DfxQYrMP/shutterstock-2232272531.webp" alt="Retail Inventory Illustration">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    fetch("http://localhost:5000/")
+      .then(response => response.text())
+      .then(data => console.log(data))
+      .catch(error => console.error("Error fetching data:", error));
+  </script>
+  
